@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO & Meta Tags -->
+    <title>Blog | Studio Las - Artykuły o Treningu, Diecie i Zdrowiu</title>
+    <meta name="description" content="Blog Studio Las. Artykuły o treningu siłowym, rehabilitacji, diecie i zdrowiu. Porady od profesjonalnego trenera Damiana Krawca.">
+    <meta name="keywords" content="blog fitness, artykuły trening, poradniki fitness, dieta, zdrowie">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blog Studio Las">
+    <meta property="og:description" content="Artykuły, porady i inspiracja z zakresu treningu i zdrowia.">
+    <meta property="og:url" content="https://studiolas.pl/blog/">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVJkEZSMUkrQ6usKu8zqLrhUXn9zesw0ztg69BFcwrnrN1UV3qkLC8F7CJstVhCUtNic16qw/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!-- JSON-LD Blog -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Studio Las Blog",
+      "description": "Artykuły o treningu, diecie i zdrowiu",
+      "url": "https://studiolas.pl/blog/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Studio Las",
+        "url": "https://studiolas.pl"
+      }
+    }
+    </script>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Główna nawigacja">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="../index.html" class="navbar-logo" aria-label="Studio Las - strona główna">
+                    <span class="logo-text">Studio</span>
+                    <span class="logo-accent">Las</span>
+                </a>
+                
+                <ul class="navbar-menu" id="navMenu" role="menubar">
+                    <li role="none"><a href="../o-nas.html" class="nav-link" role="menuitem">O mnie</a></li>
+                    <li role="none"><a href="../uslugi.html" class="nav-link" role="menuitem">Usługi</a></li>
+                    <li role="none"><a href="../cennik.html" class="nav-link" role="menuitem">Cennik</a></li>
+                    <li role="none"><a href="index.html" class="nav-link active" role="menuitem">Blog</a></li>
+                    <li role="none"><a href="../kontakt.html" class="nav-link" role="menuitem">Kontakt</a></li>
+                </ul>
+                
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScMH0fF5ZID6zY5PeC5Wp7xXjTf1VHND4Pert7cbUI7pRWEIQ/viewform" 
+                   class="btn btn-primary" 
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Wypełnij ankietę i umów konsultację">
+                    Wypełnij ankietę
+                </a>
+                
+                <button class="hamburger" 
+                        id="hamburger" 
+                        aria-label="Otwórz menu"
+                        aria-expanded="false"
+                        aria-controls="navMenu">
+                    <span class="hamburger-line" aria-hidden="true"></span>
+                    <span class="hamburger-line" aria-hidden="true"></span>
+                    <span class="hamburger-line" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header" role="banner">
+        <div class="container">
+            <h1>Blog Studio Las</h1>
+            <p>Wiedza, porady i inspiracja</p>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main role="main">
+        <!-- Category Filter -->
+        <section class="section" role="region" aria-label="Kategorie artykułów">
+            <div class="container">
+                <div class="blog-filters">
+                    <button class="filter-btn active" data-category="all" aria-label="Pokaż wszystkie artykuły">
+                        <i class="fas fa-list" aria-hidden="true"></i>
+                        Wszystkie
+                    </button>
+                    <button class="filter-btn" data-category="training" aria-label="Artykuły o treningu">
+                        <i class="fas fa-dumbbell" aria-hidden="true"></i>
+                        Trening
+                    </button>
+                    <button class="filter-btn" data-category="nutrition" aria-label="Artykuły o diecie">
+                        <i class="fas fa-apple-whole" aria-hidden="true"></i>
+                        Dieta
+                    </button>
+                    <button class="filter-btn" data-category="health" aria-label="Artykuły o zdrowiu">
+                        <i class="fas fa-heart-pulse" aria-hidden="true"></i>
+                        Zdrowie
+                    </button>
+                    <button class="filter-btn" data-category="recovery" aria-label="Artykuły o regeneracji">
+                        <i class="fas fa-spa" aria-hidden="true"></i>
+                        Regeneracja
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Articles Grid -->
+        <section class="section" role="region" aria-label="Artykuły bloga">
+            <div class="container">
+                <div class="blog-grid">
+                    
+                    <!-- Article 1 -->
+                    <article class="blog-card" data-category="training">
+                        <div class="blog-image">
+                            <img src="../images/training.jpg" 
+                                 alt="Trening siłowy - jak zacząć" 
+                                 loading="lazy"
+                                 decoding="async">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <time datetime="2025-11-15">15 Listopad 2025</time>
+                                <span class="blog-category">Trening</span>
+                            </div>
+                            <h3><a href="#">Jak zacząć trening siłowy? Poradnik dla początkujących</a></h3>
+                            <p>Kompletny przewodnik dla osób, które chcą zacząć trenować siłę. Dowiesz się jak unikać kontuzji, jakie ćwiczenia są najskuteczniejsze i jak budować konsekwencję.</p>
+                            <a href="#" class="link-arrow" aria-label="Czytaj artykuł: Jak zacząć trening siłowy">
+                                Czytaj więcej <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="blog-card" data-category="recovery">
+                        <div class="blog-image">
+                            <img src="../images/studio-interior.jpg" 
+                                 alt="Regeneracja po treningu" 
+                                 loading="lazy"
+                                 decoding="async">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <time datetime="2025-11-10">10 Listopad 2025</time>
+                                <span class="blog-category">Regeneracja</span>
+                            </div>
+                            <h3><a href="#">Regeneracja po treningu - Klucz do postępów</a></h3>
+                            <p>Dlaczego odpoczynek jest ważniejszy niż sam trening? Poznaj techniki regeneracyjne, które przyspieszyć powrót do pełnej siły i zmniejszą ryzyko przeurazowienia.</p>
+                            <a href="#" class="link-arrow" aria-label="Czytaj artykuł: Regeneracja po treningu">
+                                Czytaj więcej <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="blog-card" data-category="nutrition">
+                        <div class="blog-image">
+                            <img src="../images/spadochroniarstwo.jpg" 
+                                 alt="Dieta na masę mięśniową" 
+                                 loading="lazy"
+                                 decoding="async">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <time datetime="2025-11-05">5 Listopad 2025</time>
+                                <span class="blog-category">Dieta</span>
+                            </div>
+                            <h3><a href="#">Dieta na masę mięśniową bez zbędnego tłuszczu</a></h3>
+                            <p>Co jeść, aby budować mięśnie? Dowiedz się ile kalorii potrzebujesz, jakie są najlepsze źródła białka, i jak uniknąć zwykłych błędów dietetycznych.</p>
+                            <a href="#" class="link-arrow" aria-label="Czytaj artykuł: Dieta na masę">
+                                Czytaj więcej <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="blog-card" data-category="training">
+                        <div class="blog-image">
+                            <img src="../images/studio-exterior.jpg" 
+                                 alt="Błędy podczas treningu" 
+                                 loading="lazy"
+                                 decoding="async">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <time datetime="2025-10-28">28 Październik 2025</time>
+                                <span class="blog-category">Trening</span>
+                            </div>
+                            <h3><a href="#">5 Najczęstszych błędów w treningu siłowym</a></h3>
+                            <p>Które błędy trening powodują brak postępów i mogą skończyć się kontuzją? Poznaj je i dowiedz się jak ich uniknąć, aby maksymalizować wyniki.</p>
+                            <a href="#" class="link-arrow" aria-label="Czytaj artykuł: Błędy w treningu">
+                                Czytaj więcej <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="blog-card" data-category="health">
+                        <div class="blog-image">
+                            <img src="../images/spadochroniarstwo2.jpg" 
+                                 alt="Bół kręgosłupa" 
+                                 loading="lazy"
+                                 decoding="async">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <time datetime="2025-10-20">20 Październik 2025</time>
+                                <span class="blog-category">Zdrowie</span>
+                            </div>
+                            <h3><a href="#">Bół kręgosłupa - Przyczyny i rozwiązania</a></h3>
+                            <p>Czy chroniczny ból pleców musi być Twoim udziałem? Poznaj przyczyny bólu, techniki samoleczenia i kiedy warto szukać profesjonalnej pomocy.</p>
+                            <a href="#" class="link-arrow" aria-label="Czytaj artykuł: Bół kręgosłupa">
+                                Czytaj więcej <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="blog-card" data-category="nutrition">
+                        <div class="blog-image">
+                            <img src="../images/training.jpg" 
+                                 alt="Suplementacja sportowa" 
+                                 loading="lazy"
+                                 decoding="async">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <time datetime="2025-10-12">12 Październik 2025</time>
+                                <span class="blog-category">Dieta</span>
+                            </div>
+                            <h3><a href="#">Suplementacja sportowa - Co naprawdę warto kupić</a></h3>
+                            <p>Całe półki suplementów w sklepach - które z nich działają? Dowiedz się które suplementy mają naukowe poparcie i będą ci rzeczywiście pomagać.</p>
+                            <a href="#" class="link-arrow" aria-label="Czytaj artykuł: Suplementacja">
+                                Czytaj więcej <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter CTA -->
+        <section class="section section-gray" role="region" aria-label="Newsletter">
+            <div class="container">
+                <div class="newsletter-box text-center">
+                    <h2>Chcesz otrzymywać artykuły?</h2>
+                    <p>Zapisz się do newslettera i otrzymuj nowe artykuły oraz porady treningowe bezpośrednio na maila.</p>
+                    <p style="margin-top: 1rem;">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScMH0fF5ZID6zY5PeC5Wp7xXjTf1VHND4Pert7cbUI7pRWEIQ/viewform" 
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary"
+                           aria-label="Zapisz się do newslettera">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            Zapisz się do newslettera
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="../index.html" class="footer-logo" aria-label="Studio Las">
+                        <span class="logo-text">Studio</span>
+                        <span class="logo-accent">Las</span>
+                    </a>
+                    <p>Studio treningowe w sercu natury. Profesjonalny trening z wynikami.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Szybkie linki</h4>
+                    <ul>
+                        <li><a href="../o-nas.html">O mnie</a></li>
+                        <li><a href="../uslugi.html">Usługi</a></li>
+                        <li><a href="../cennik.html">Cennik</a></li>
+                        <li><a href="../kontakt.html">Kontakt</a></li>
+                        <li><a href="index.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <address>
+                        <p>ul. Pracka 1J, 05-504 Prace Duże</p>
+                        <p><a href="tel:+48503975998" aria-label="Zadzwoń: 503 975 998">503 975 998</a></p>
+                        <p><a href="mailto:trenermedycznywarszawa@gmail.com" aria-label="Wyślij email">Napisz do nas</a></p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Studio Las. Wszystkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="../js/main.js" defer></script>
+    
+    <!-- Blog Filter Script -->
+    <script>
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Filter articles
+                const category = btn.getAttribute('data-category');
+                document.querySelectorAll('.blog-card').forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
