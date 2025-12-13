@@ -1,0 +1,21 @@
+# Studio Las - Robots.txt
+# https://studiolas.pl/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://studiolas.pl/sitemap.xml
+
+# Disallow admin/private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Allow CSS and JS for better crawling
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Crawl-delay (optional - use if you have server load concerns)
+# Crawl-delay: 10

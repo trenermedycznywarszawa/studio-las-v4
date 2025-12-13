@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Blog - Studio Las | Porady treningowe, żywienie, zdrowie</title>
+    <meta name="description" content="Praktyczne porady treningowe, żywieniowe i zdrowotne od eksperta. Dowiedz się jak trenować bezpiecznie i skutecznie.">
+    <meta name="keywords" content="blog fitness, porady treningowe, żywienie sportowe, regeneracja, zdrowie, trening siłowy">
+    <meta name="author" content="Damian Krawiec - Studio Las">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://studiolas.pl/blog.html">
+    <meta property="og:title" content="Blog Studio Las | Porady treningowe i zdrowotne">
+    <meta property="og:description" content="Praktyczne porady od trenera personalnego i medycznego z 15-letnim doświadczeniem.">
+    <meta property="og:image" content="https://studiolas.pl/images/blog-cover.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/blog.css">
+</head>
+<body>
+
+    <!-- ============================================
+         NAVIGATION BAR (Same as index.html)
+         ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="./index.html#home" class="navbar-logo">
+                    <span class="logo-text">Studio</span>
+                    <span class="logo-accent">Las</span>
+                </a>
+                
+                <ul class="navbar-menu" id="navMenu">
+                    <li><a href="./index.html#about" class="nav-link">O mnie</a></li>
+                    <li><a href="./index.html#services" class="nav-link">Usługi</a></li>
+                    <li><a href="./index.html#pricing" class="nav-link">Cennik</a></li>
+                    <li><a href="./blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="./index.html#contact" class="nav-link">Kontakt</a></li>
+                </ul>
+                
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScMH0fF5ZID6zY5PeC5Wp7xXjTf1VHND4Pert7cbUI7pRWEIQ/viewform" 
+                   class="btn btn-primary" 
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Wypełnij ankietę
+                </a>
+                
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         BLOG HERO SECTION
+         ============================================ -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="blog-hero-content">
+                <span class="section-label">Blog Studio Las</span>
+                <h1 class="blog-hero-title">Wiedza o treningu, zdrowiu i odżywianiu</h1>
+                <p class="blog-hero-description">
+                    Praktyczne porady oparte na nauce i 15-letnim doświadczeniu. 
+                    Dowiedz się jak trenować skutecznie i bezpiecznie.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         BLOG CATEGORIES FILTER
+         ============================================ -->
+    <section class="blog-filters section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Wszystkie</button>
+                <button class="filter-btn" data-category="trening">Trening</button>
+                <button class="filter-btn" data-category="zywienie">Żywienie</button>
+                <button class="filter-btn" data-category="zdrowie">Zdrowie</button>
+                <button class="filter-btn" data-category="rehabilitacja">Rehabilitacja</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         BLOG ARTICLES GRID
+         ============================================ -->
+    <section class="blog-articles section">
+        <div class="container">
+            <div class="blog-grid">
+                
+                <!-- Article NEW - Sprzęt Studio Las -->
+                <article class="blog-card" data-category="trening">
+                    <div class="blog-image">
+                        <img src="images/blog/studio-interior.jpg" alt="Wnętrze Studio Las - profesjonalny sprzęt treningowy" loading="lazy">
+                        <span class="blog-category">Trening</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar"></i> 1 Grudzień 2025</span>
+                            <span class="blog-read-time"><i class="far fa-clock"></i> 7 min</span>
+                        </div>
+                        
+                        <h2 class="blog-title">Studio Las - sprzęt treningowy stworzony do osiągania celów</h2>
+                        
+                        <p class="blog-excerpt">
+                            Odkryj dlaczego w Studio Las stawiamy na jakość ponad ilość. Profesjonalny sprzęt siłowy, cardio i funkcjonalny w ekskluzywnym otoczeniu lasu. Poznaj filozofię doboru sprzętu treningowego opartą na 15 latach doświadczenia.
+                        </p>
+                        
+                        <div class="blog-tags">
+                            <span class="tag">sprzęt treningowy</span>
+                            <span class="tag">Studio Las</span>
+                            <span class="tag">power rack</span>
+                        </div>
+                        
+                        <a href="./articles/sprzet-studio-las.html" class="blog-link">
+                            Czytaj więcej <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 1 - Trening -->
+                <article class="blog-card" data-category="trening">
+                    <div class="blog-image">
+                        <img src="images/blog/trening-silowy.jpg" alt="Jak zacząć trening siłowy" loading="lazy">
+                        <span class="blog-category">Trening</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar"></i> 15 Listopad 2025</span>
+                            <span class="blog-read-time"><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <h2 class="blog-title">Jak zacząć trening siłowy - kompleksowy przewodnik dla początkujących</h2>
+                        <p class="blog-excerpt">
+                            Trening siłowy to podstawa każdej zdrowej transformacji. W tym artykule dowiesz się, 
+                            od czego zacząć, jak unikać kontuzji i jak efektywnie budować siłę i masę mięśniową. 
+                            Poznaj najczęstsze błędy początkujących i sprawdzone strategie sukcesu.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">trening siłowy</span>
+                            <span class="tag">początkujący</span>
+                            <span class="tag">technika</span>
+                        </div>
+                        <a href="./articles/trening-silowy.html" class="blog-link">
+                            Czytaj więcej <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 2 - Żywienie -->
+                <article class="blog-card" data-category="zywienie">
+                    <div class="blog-image">
+                        <img src="images/blog/dieta-masa.jpg" alt="Dieta na masę mięśniową" loading="lazy">
+                        <span class="blog-category">Żywienie</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar"></i> 10 Listopad 2025</span>
+                            <span class="blog-read-time"><i class="far fa-clock"></i> 10 min</span>
+                        </div>
+                        <h2 class="blog-title">Dieta na masę mięśniową - co jeść i czego unikać</h2>
+                        <p class="blog-excerpt">
+                            Budowanie masy mięśniowej to 70% dieta, 30% trening. Poznaj zasady skutecznej diety 
+                            bulkingowej, najczęstsze błędy, które spowalniają postępy oraz praktyczne porady 
+                            dotyczące planowania posiłków i suplementacji.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">dieta</span>
+                            <span class="tag">masa mięśniowa</span>
+                            <span class="tag">bulking</span>
+                        </div>
+                        <a href="./articles/dieta-masa.html" class="blog-link">
+                            Czytaj więcej <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 3 - Zdrowie -->
+                <article class="blog-card" data-category="zdrowie">
+                    <div class="blog-image">
+                        <img src="images/blog/regeneracja.jpg" alt="Regeneracja po treningu" loading="lazy">
+                        <span class="blog-category">Zdrowie</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar"></i> 5 Listopad 2025</span>
+                            <span class="blog-read-time"><i class="far fa-clock"></i> 7 min</span>
+                        </div>
+                        <h2 class="blog-title">Regeneracja po treningu - tajemnica prawdziwego postępu</h2>
+                        <p class="blog-excerpt">
+                            Większość osób skupia się tylko na treningu, zapominając o regeneracji. Tymczasem to 
+                            właśnie odpoczynek decyduje o Twoich wynikach. Sprawdź, jak regenerować się skutecznie: 
+                            sen, odżywianie, stretching, masaże i suplementacja.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">regeneracja</span>
+                            <span class="tag">odpoczynek</span>
+                            <span class="tag">sen</span>
+                        </div>
+                        <a href="./articles/regeneracja.html" class="blog-link">
+                            Czytaj więcej <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 4 - Rehabilitacja -->
+                <article class="blog-card" data-category="rehabilitacja">
+                    <div class="blog-image">
+                        <img src="images/blog/bol-kregoslupa.jpg" alt="Ból kręgosłupa - rozwiązania" loading="lazy">
+                        <span class="blog-category">Rehabilitacja</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar"></i> 1 Listopad 2025</span>
+                            <span class="blog-read-time"><i class="far fa-clock"></i> 12 min</span>
+                        </div>
+                        <h2 class="blog-title">Przewlekły ból kręgosłupa - jak wrócić do aktywności</h2>
+                        <p class="blog-excerpt">
+                            Ból kręgosłupa dotyka 80% populacji. Dowiedz się jak bezpiecznie wrócić do aktywności 
+                            fizycznej, jakie ćwiczenia są bezpieczne, a których unikać. Poznaj sprawdzone metody 
+                            eliminacji bólu oparte na fizjoterapii i treningu medycznym.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">ból pleców</span>
+                            <span class="tag">rehabilitacja</span>
+                            <span class="tag">kręgosłup</span>
+                        </div>
+                        <a href="./articles/bol-kregoslupa.html" class="blog-link">
+                            Czytaj więcej <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 5 - Trening -->
+                <article class="blog-card" data-category="trening">
+                    <div class="blog-image">
+                        <img src="images/blog/trening-funkcjonalny.jpg" alt="Trening funkcjonalny" loading="lazy">
+                        <span class="blog-category">Trening</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar"></i> 28 Październik 2025</span>
+                            <span class="blog-read-time"><i class="far fa-clock"></i> 6 min</span>
+                        </div>
+                        <h2 class="blog-title">Trening funkcjonalny - czym jest i dla kogo?</h2>
+                        <p class="blog-excerpt">
+                            Trening funkcjonalny stał się ostatnio bardzo popularny, ale czy naprawdę wiesz czym jest? 
+                            Poznaj zasady treningu funkcjonalnego, jego korzyści oraz przykładowe ćwiczenia, 
+                            które możesz wykonać zarówno w domu jak i na siłowni.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">functional training</span>
+                            <span class="tag">CrossFit</span>
+                            <span class="tag">mobilność</span>
+                        </div>
+                        <a href="./articles/trening-funkcjonalny.html" class="blog-link">
+                            Czytaj więcej <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Article 6 - Żywienie -->
+                <article class="blog-card" data-category="zywienie">
+                    <div class="blog-image">
+                        <img src="images/blog/suplementacja.jpg" alt="Suplementacja w sporcie" loading="lazy">
+                        <span class="blog-category">Żywienie</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar"></i> 22 Październik 2025</span>
+                            <span class="blog-read-time"><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <h2 class="blog-title">Suplementacja w sporcie - co naprawdę działa?</h2>
+                        <p class="blog-excerpt">
+                            Rynek suplementów to miliardy złotych rocznie, ale większość produktów to marketing. 
+                            Dowiedz się które suplementy są poparte badaniami naukowymi, a które to strata pieniędzy. 
+                            Lista must-have suplementów dla każdego trenującego.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="tag">suplementy</span>
+                            <span class="tag">odżywki</span>
+                            <span class="tag">kreatyna</span>
+                        </div>
+                        <a href="./articles/suplementacja.html" class="blog-link">
+                            Czytaj więcej <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="blog-pagination">
+                <button class="pagination-btn" disabled>
+                    <i class="fas fa-chevron-left"></i> Poprzednie
+                </button>
+                <div class="pagination-numbers">
+                    <button class="pagination-number active">1</button>
+                    <button class="pagination-number">2</button>
+                    <button class="pagination-number">3</button>
+                </div>
+                <button class="pagination-btn">
+                    Następne <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         NEWSLETTER SECTION
+         ============================================ -->
+    <section class="newsletter section section-gray">
+        <div class="container">
+            <div class="newsletter-box">
+                <div class="newsletter-content">
+                    <i class="fas fa-envelope-open-text newsletter-icon"></i>
+                    <h3 class="newsletter-title">Zapisz się do newslettera</h3>
+                    <p class="newsletter-description">
+                        Otrzymuj najnowsze artykuły, porady treningowe i ekskluzywne materiały 
+                        prosto na swoją skrzynkę mailową.
+                    </p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input 
+                        type="email" 
+                        placeholder="Twój adres email" 
+                        class="newsletter-input"
+                        required
+                    >
+                    <button type="submit" class="btn btn-primary">
+                        Zapisz się
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER (Same as index.html)
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="./index.html#home" class="footer-logo">
+                        <span class="logo-text">Studio</span>
+                        <span class="logo-accent">Las</span>
+                    </a>
+                    <p class="footer-description">
+                        Ekskluzywne studio treningowe w sercu natury. Połączenie doświadczenia wojskowego, 
+                        wiedzy medycznej i pasji do sportu.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=100063614306951" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Szybkie linki</h4>
+                    <ul class="footer-links">
+                        <li><a href="./index.html#about">O mnie</a></li>
+                        <li><a href="./index.html#services">Usługi</a></li>
+                        <li><a href="./index.html#pricing">Cennik</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./index.html#contact">Kontakt</a></li>
+                        <li><a href="https://sites.google.com/view/trener-personalny-warszawa/referencje" target="_blank" rel="noopener noreferrer">Certyfikaty</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Usługi</h4>
+                    <ul class="footer-links">
+                        <li><a href="./index.html#services">Trening Personalny</a></li>
+                        <li><a href="./index.html#services">Konsultacje Medyczne</a></li>
+                        <li><a href="./index.html#services">Rehabilitacja</a></li>
+                        <li><a href="./index.html#services">Treningi Online</a></li>
+                        <li><a href="./index.html#services">Planowanie Żywienia</a></li>
+                        <li><a href="./index.html#services">Usługi dla Firm</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Kontakt</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>ul. Pracka 1J<br>05-504 Prace Duże</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+48503975998">503 975 998</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:trenermedycznywarszawa@gmail.com">trenermedycznywarszawa@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Pon-Pt: 16:00 - 22:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Studio Las. Wszystkie prawa zastrzeżone.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#privacy">Polityka prywatności</a>
+                    <span class="separator">|</span>
+                    <a href="#terms">Regulamin</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Wróć na górę">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+    <script src="./js/blog.js"></script>
+</body>
+</html>
